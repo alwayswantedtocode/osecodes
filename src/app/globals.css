@@ -1,15 +1,11 @@
 @import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +16,43 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
+background: linear-gradient(to bottom right, #0f0c29, #1e3c72, #24243e);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes gradient-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.animate-gradient-pulse {
+  animation: gradient-pulse 8s ease-in-out infinite;
+}
+
+.prose-lg {
+  line-height: 1.75;
+}
+
+.backdrop-blur-sm {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  
+}
+
+.mix-blend-overlay {
+  mix-blend-mode: overlay;
+}
+
+.background{
+  background: linear-gradient(to bottom right, #0f0c29, #1e3c72, #24243e);
+    /* or */
+    /* background: linear-gradient(to right bottom, #0f0c29, #1e3c72, #24243e); */
 }
