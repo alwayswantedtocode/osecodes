@@ -17,7 +17,7 @@ const HeaderSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
             id='Home'
-            className="relative min-h-screen flex items-center justify-center  py-5 px-4 sm:px-6 lg:px-8 overflow-hidden "
+            className="relative min-h-screen flex items-center justify-center  py-5 px-4 sm:px-6 lg:px-8 overflow-hidden mb-8"
         >
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-repeat opacity-10"></div>
@@ -81,7 +81,7 @@ const HeaderSection = () => {
                         </Link>
 
                         <a
-                            href="/Osatohamhen Frontend Resume new.pdf"
+                            href="/OSATOHAMHEN FRONTEND RESUME.pdf"
                             download
                             target="_blank"
                             rel="noopener noreferrer"

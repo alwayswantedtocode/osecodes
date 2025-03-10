@@ -15,7 +15,7 @@ const SkillSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
             id='Tech-Stack'
-            className="flex items-center justify-center  py-5 px-4 sm:px-6 lg:px-8 overflow-hidden "
+            className="flex items-center justify-center  py-5 px-4 sm:px-6 lg:px-8 overflow-hidden mb-8"
         >
             <div className="max-w-7xl flex mx-auto flex-col items-center justify-center px-6 ">
                 {/* Section Title */}
@@ -50,6 +50,13 @@ const SkillSection = () => {
                         title="Tools"
                         skills={[
                             'Git', 'GitHub', 'Webpack', 'Vite', 'Postman'
+                        ]}
+                        delay={0.8}
+                    />
+                    <SkillCategory
+                        title="Tools"
+                        skills={[
+                            'Problem-solving & debugging', 'Communication & writing', ' Team player', 'Time management', 'Team management'
                         ]}
                         delay={0.8}
                     />

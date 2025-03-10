@@ -15,7 +15,7 @@ const AboutMe = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
             id='About-me'
-            className="relative min-h-screen flex flex-col items-center justify-center py-16 md:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-blue-50/30 to-purple-50/30"
+            className="relative min-h-screen flex flex-col items-center justify-center py-16 md:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-blue-50/30 to-purple-50/30 mb-8"
         >
 
             {/* Section Title */}
