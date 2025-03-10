@@ -54,7 +54,7 @@ const SkillSection = () => {
                         delay={0.8}
                     />
                     <SkillCategory
-                        title="Tools"
+                        title="Core Competencies"
                         skills={[
                             'Problem-solving & debugging', 'Communication & writing', ' Team player', 'Time management', 'Team management'
                         ]}
