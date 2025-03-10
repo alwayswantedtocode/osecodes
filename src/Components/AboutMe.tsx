@@ -147,15 +147,15 @@ const AboutMe = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ delay: 0.7 }}
-                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-500"
+                        className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#c07a5c]"
                     >
                         <div className="flex flex-col items-center text-center space-y-2">
                             <div className="mb-2 p-2 bg-purple-100 rounded-full">
-                                <MdSchool className="text-2xl text-purple-600" />
+                                <MdSchool className="text-2xl text-[#c07a5c]" />
                             </div>
                             <h3 className="text-lg font-bold text-gray-900">Education</h3>
                             <p className="text-sm text-gray-600">B.ENG Degree</p>
-                            <p className="text-base font-semibold text-purple-600">Electrical & Electronics</p>
+                            <p className="text-base font-semibold text-[#c07a5c]">Electrical & Electronics</p>
                         </div>
                     </motion.div>
                 </div>
