@@ -100,7 +100,7 @@ const ContactForm = () => {
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.4 }}
                     >
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="name" className="block text-sm font-medium text-slate-100 mb-2">
                             Name
                         </label>
                         <input
@@ -127,7 +127,7 @@ const ContactForm = () => {
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.4 }}
                     >
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="email" className="block text-sm font-medium text-slate-100 mb-2">
                             Email
                         </label>
                         <input
@@ -154,7 +154,7 @@ const ContactForm = () => {
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.4 }}
                     >
-                        <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="subject" className="block text-sm font-medium text-slate-100 mb-2">
                             subject
                         </label>
                         <input
@@ -176,7 +176,7 @@ const ContactForm = () => {
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ delay: 0.6 }}
                     >
-                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="message" className="block text-sm font-medium text-slate-100 mb-2">
                             Message
                         </label>
                         <textarea
