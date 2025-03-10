@@ -91,7 +91,7 @@ function SkillCategory({ title, skills, delay }: Skills) {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={inView ? { opacity: 1, scale: 1 } : {}}
                         transition={{ delay: delay + index * 0.05 }}
-                        className="px-4 py-2  bg-[#f2d2c5] text-grey-600 rounded-full text-sm shadow-sm hover:shadow-md transition-shadow duration-300"
+                        className="px-4 py-2  bg-[#f2d2c5] text-gray-800 rounded-full text-sm shadow-sm hover:shadow-md transition-shadow duration-300"
                     >
                         {skill}
                     </motion.span>

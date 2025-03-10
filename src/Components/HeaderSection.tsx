@@ -31,7 +31,7 @@ const HeaderSection = () => {
                             initial={{ opacity: 0, x: -20 }}
                             animate={inView ? { opacity: 1, x: 0 } : {}}
                             transition={{ delay: 0.2 }}
-                            className="text-lg font-medium bg-[#c07a5c] text-grey-600 w-max flex items-center rounded justify-center py-[7px] px-[10px]"
+                            className="text-lg text-gray-800 font-medium bg-[#c07a5c] text-gray-800 w-max flex items-center rounded justify-center py-[7px] px-[10px]"
                         >
                             Hello, I&apos;m
                         </motion.p>
@@ -49,7 +49,7 @@ const HeaderSection = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={inView ? { opacity: 1, y: 0 } : {}}
                             transition={{ delay: 0.6 }}
-                            className="text-2xl text-gray-800 font-medium bg-[#c07a5c] rounded text-grey-600 w-max flex items-center justify-center py[7px] px-[10px]"
+                            className="text-2xl text-gray-800 font-medium bg-[#c07a5c] rounded text-gray-800 w-max flex items-center justify-center py[7px] px-[10px]"
                         >
                             JavaScript & React Developer
                         </motion.p>
@@ -110,7 +110,7 @@ const HeaderSection = () => {
                     />
                 </motion.div>
             </div>
-          
+
         </motion.section>
     )
 }

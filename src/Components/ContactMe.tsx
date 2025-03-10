@@ -206,9 +206,9 @@ const ContactForm = () => {
                         <button
                             type="submit"
                             disabled={formik.isSubmitting || !formik.isValid}
-                            className="flex items-center justify-center gap-2 px-8 py-4 bg-[#c07a5c]  text-white rounded-lg shadow-lg hover:bg-[#f2d2c5] hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="flex items-center justify-center gap-2 px-8 py-4 bg-[#c07a5c]  text-gray-800 rounded-lg shadow-lg hover:bg-[#f2d2c5] hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            <FiSend className="w-5 h-5" />
+                            <FiSend className="w-5 h-5 text-gray-800" />
                             {formik.isSubmitting ? "Sending..." : "Send Message"}
                         </button>
                     </motion.div>

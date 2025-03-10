@@ -16,7 +16,7 @@ type Project = {
 const ProjectsSection = () => {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
-   
+
 
     return (
         <motion.section
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
             id='Projects'
             className="relative min-h-screen flex items-center justify-center  py-5 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-blue-50/30 to-purple-50/30 mb-8"
         >
-        
+
             <div className="max-w-7xl  px-4 sm:px-6 lg:px-8">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
@@ -52,9 +52,9 @@ const ProjectsSection = () => {
         </motion.section>
     )
 }
-interface ProjectItemsProps{
+interface ProjectItemsProps {
     project: Project;
-    index: number ;
+    index: number;
 }
 function ProjectItem({ project, index }: ProjectItemsProps) {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
@@ -80,7 +80,7 @@ function ProjectItem({ project, index }: ProjectItemsProps) {
                             rel="noopener noreferrer"
                         >
                             <span className="sr-only">{link.label}</span>
-                            
+
                             {/* {React.cloneElement(link.icon, { className: 'w-5 h-5' })} */}
                         </a>
                     ))}
@@ -94,7 +94,7 @@ function ProjectItem({ project, index }: ProjectItemsProps) {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={inView ? { opacity: 1, scale: 1 } : {}}
                         transition={{ delay: 0.2 * (index || 0) + idx * 0.05 }}
-                        className="px-3 py-1 bg-[#f2d2c5] text-grey-600 rounded-full text-sm"
+                        className="px-3 py-1 bg-[#f2d2c5] text-gray-800 rounded-full text-sm"
                     >
                         {tech}
                     </motion.span>
