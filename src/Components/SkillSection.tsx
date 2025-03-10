@@ -25,8 +25,8 @@ const SkillSection = () => {
                     transition={{ delay: 0.2 }}
                     className="text-3xl font-bold text-slate-100 text-center mb-12 relative"
                 >
-                    Tech Stack
-                    <span className="absolute bottom-0 left-1/2 w-16 md:w-24 h-1 bg-slate-100 -translate-x-1/2 translate-y-2 rounded-full" />
+                    Tech Stack &amp; Skills
+                    <span className="absolute bottom-0 left-1/2 w-16 md:w-34 h-1 bg-slate-100 -translate-x-1/2 translate-y-2 rounded-full" />
                 </motion.h2>
 
                 {/* Skills Grid */}
