@@ -61,7 +61,7 @@ const HeaderSection = () => {
                             className="text-lg text-slate-100 leading-relaxed max-w-2xl"
                         >
                             A passionate frontend developer specializing in React.js, Next.js, and modern web technologies.
-                            I create responsive, user-friendly interfaces with a focus on performance and clean code.
+                            Build scalable, performant web apps that prioritize accessibility, cross-browser compatibility, and pixel-perfect design.
                         </motion.p>
                     </div>
 

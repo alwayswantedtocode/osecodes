@@ -57,7 +57,7 @@ const AboutMe = () => {
                         className="prose-sm md:prose-lg text-gray-700 leading-relaxed bg-white/80 backdrop-blur-sm p-4 md:p-8 rounded-xl md:rounded-2xl shadow-md md:shadow-lg"
                     >
                         <p className="text-base md:text-lg mb-3 md:mb-4">
-                            An enthusiastic self-taught junior frontend developer with a strong foundation in
+                            An enthusiastic self-taught frontend developer specializing in
                             <span className="text-blue-600 font-medium"> TypeScript</span>,
                             <span className="text-blue-600 font-medium"> JavaScript</span>, and modern frameworks like
                             <span className="text-blue-600 first-letter:font-medium"> React.js</span>,
@@ -65,9 +65,13 @@ const AboutMe = () => {
                             <span className="text-blue-600 font-medium"> Redux Toolkit</span>.
                         </p>
                         <p className="text-base md:text-lg">
-                            I specialize in building scalable, user-centric web applications through hands-on
-                            experience developing solo projects. Currently seeking opportunities to contribute
-                            my technical expertise in a collaborative tech environment.
+                            I build scalable, performant web apps that prioritize accessibility, cross-browser compatibility, and pixel-perfect design.
+
+                            Through solo and collaborative projects, I turn complex ideas into clean, user-centric interfaces from social media platforms to interactive dashboards.
+
+                            When not coding, I experiment with tools and libraries to optimize code quality and performance. Beyond tech, I organize with social movements and NGOs to address community challenges.
+
+                            Let’s connect and create something amazing!
                         </p>
                     </motion.div>
 
