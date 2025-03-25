@@ -3,11 +3,13 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import projects from "./ProjectsData"
-import { ReactNode } from "react";
+// import { ReactNode } from "react";
+// import { IconType } from "react-icons";
+
 
 type Project = {
     title: string;
-    links: { url: string; label: string; icon: ReactNode }[];
+    links: { url: string; label: string; icon: React.ComponentType<{ className?: string }> }[];
     stack: string[];
     achievements: string[];
 };
@@ -70,20 +72,25 @@ function ProjectItem({ project, index }: ProjectItemsProps) {
             <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
                 <div className="flex space-x-3">
-                    {project.links.map((link, idx) => (
-                        <a
-                            key={`${link.label}-${idx}`}
-                            href={link.url}
-                            title={link.label}
-                            className="text-gray-600 hover:text-blue-600 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="sr-only">{link.label}</span>
+                    {project.links.map((link, idx) => {
+                        const Icon = link.icon;
+                        return (
+                            <a
+                                key={`${link.label}-${idx}`}
+                                href={link.url}
+                                title={link.label}
+                                className="text-gray-600 hover:text-blue-600 transition-colors"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="sr-only">{link.label}</span>
 
-                            {/* {React.cloneElement(link.icon, { className: 'w-5 h-5' })} */}
-                        </a>
-                    ))}
+                                <Icon className="w-5 h-5" />
+
+                            </a>
+                        )
+
+                    })}
                 </div>
             </div>
 

@@ -1,11 +1,12 @@
-import { ReactNode } from "react";
+// import { ReactNode } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+// import { IconType } from "react-icons";
 
 
 
 type Project = {
   title: string;
-  links: { url: string; label: string; icon: ReactNode }[];
+  links: { url: string; label: string; icon:  React.ComponentType<{ className?: string }> }[];
   stack: string[];
   achievements: string[];
 };
@@ -15,9 +16,9 @@ type projectTypes = Project[];
   {
     title: "Social Media CRUD Web App",
     links: [
-      { url: "https://github.com/alwayswantedtocode/share-x", label: "Client Repo", icon: <FiGithub /> },
-      { url: "https://github.com/alwayswantedtocode/Share-x-Server", label: "Server Repo", icon: <FiGithub /> },
-      { url: "https://share-x-q14a.onrender.com", label: "Live Demo", icon: <FiExternalLink /> },
+      { url: "https://github.com/alwayswantedtocode/share-x", label: "Client Repo", icon: FiGithub },
+      { url: "https://github.com/alwayswantedtocode/Share-x-Server", label: "Server Repo", icon: FiGithub  },
+      { url: "https://share-x-q14a.onrender.com", label: "Live Demo", icon: FiExternalLink  },
     ],
     stack: ["React.js", "Redux Toolkit", "Firebase", "Tailwind CSS"],
     achievements: [
@@ -30,9 +31,9 @@ type projectTypes = Project[];
   {
     title: "Location Pinning CRUD Web App",
     links: [
-      { url: "https://github.com/alwayswantedtocode/Pinning-Location", label: "Client Repo", icon: <FiGithub /> },
-      { url: "https://github.com/alwayswantedtocode/Pinning-Location", label: "Server Repo", icon: <FiGithub /> },
-      { url: "https://lara-pastry-ui.onrender.com", label: "Live Demo", icon: <FiExternalLink /> },
+      { url: "https://github.com/alwayswantedtocode/Pinning-Location", label: "Client Repo", icon: FiGithub  },
+      { url: "https://github.com/alwayswantedtocode/Pinning-Location", label: "Server Repo", icon: FiGithub  },
+      { url: "https://lara-pastry-ui.onrender.com", label: "Live Demo", icon: FiExternalLink  },
     ],
     stack: ["React", "MongoDB", "Google Maps API"],
     achievements: [
@@ -44,9 +45,9 @@ type projectTypes = Project[];
   {
     title: "Automobile Dynamic Web App",
     links: [
-      { url: "https://github.com/alwayswantedtocode/ShowRoom-Project", label: "Client Repo", icon: <FiGithub /> },
+      { url: "https://github.com/alwayswantedtocode/ShowRoom-Project", label: "Client Repo", icon: FiGithub  },
 
-      { url: "https://showroom-6nwa.onrender.com/", label: "Live Demo", icon: <FiExternalLink /> },
+      { url: "https://showroom-6nwa.onrender.com/", label: "Live Demo", icon: FiExternalLink  },
     ],
     stack: ["React", "Firebase"],
     achievements: [
