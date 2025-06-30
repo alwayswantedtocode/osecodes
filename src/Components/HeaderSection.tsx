@@ -81,7 +81,7 @@ const HeaderSection = () => {
                         </Link>
 
                         <a
-                            href="/OSATOHAMHEN FRONTEND RESUME.pdf"
+                            href="/OSATOHAMHEN FRONTEND RESUME-New.pdf"
                             download
                             target="_blank"
                             rel="noopener noreferrer"
